@@ -1,0 +1,378 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Garamond;
+}
+
+/*-----оформление хидера-------*/
+header{
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+	width: 100%;
+	border-bottom: 1px solid lightgrey;
+}
+header div:first-child{
+	display: flex;
+}
+header nav{
+	display: flex;
+}
+header div img{
+	width: 25px;
+	padding-right: 15px;
+}
+header h2{
+	text-transform: uppercase;
+	padding-left: 15px;
+}
+header nav a{
+	text-decoration: none;
+	color: black;
+	padding-left: 15px;
+	font-size: 24px;
+}
+header nav a:hover{
+	text-decoration: underline;
+}
+header div{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*-------основная часть------*/
+
+/*-----приветствие-------*/
+.first{
+	display: flex;
+	height: 90vh;
+	width: 100%;
+	border-bottom: 1px solid lightgrey;
+}
+.first h1{
+	font-weight: normal;
+}
+.first img{
+	width: 50%;
+	height: 100%;
+}
+.first div:first-child{
+	text-align: justify;
+	margin:auto 4%;
+}
+.first p:nth-child(4){
+	font-size: 0.9em;
+}
+.first a{
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 1%;
+	margin: 2% 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: grey;
+}
+
+/*-------статьи---------*/
+article{
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	border-bottom: 1px solid lightgrey;
+}
+article img{
+	height: 100%;
+}
+article div{
+	margin: auto 4%;
+	text-align: justify;
+}
+article div h2{
+	font-weight: normal;
+	font-size: 35px;
+}
+article a{
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 1%;
+	margin: 2% 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: grey;
+}
+
+/*--------галерея--------*/
+.gallery{
+	display: flex;
+	flex-direction: column;
+}
+.gallery img{
+	width: 20%;
+}
+.gallery div{
+	display: flex;
+	height: 40vh;
+}
+.gallery h2{
+	height: 10vh;
+	font-weight: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 3% auto;
+}
+
+/*-----список преимуществ-----*/
+
+.feat{
+	width: 100%;
+}
+.feat h2{
+	height: 10vh;
+	font-weight: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 3% auto;
+}
+.feat table{
+	border-collapse: collapse;
+	margin: 0 5%;
+}
+.feat table td{
+	text-align: center;
+}
+.feat table td h3{
+	font-weight: bolder;
+	font-size: 18px;
+}
+.feat table img{
+	width: 30px;
+}
+
+/*----формы для отправки------*/
+.forms{
+	width: 90%;
+	margin: 2% auto;
+}
+.forms h2{
+	height: 10vh;
+	font-weight: normal;
+	font-size: 35px;
+	text-align: center;
+	margin: 3% auto;
+}
+form{
+	margin: 0 3%;
+}
+.user{
+	display: flex;
+	justify-content: space-between;
+	height: 15vh;
+}
+.user div{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+form label, form p{
+	font-weight: bolder;
+	font-size: 18px;
+}
+.contact{
+	display: flex;
+	align-items: center;
+	height: 10vh;
+}
+.contact label:first-child{
+	padding-right: 30px;
+}
+.contact label:nth-child(2),
+.contact label:nth-child(4),
+.contact label:nth-child(6){
+	padding-left: 7px;
+	margin-right: 20px;
+}
+select{
+	width: 100%;
+	font-size: 18px;
+	padding: 5px;
+}
+.msg{
+	height: 30vh;
+	margin: 2% 0;
+}
+textarea{
+	width: 100%;
+	height: 20vh;
+}
+.check{
+	display: flex;
+	justify-content: space-between;
+}
+#send{
+	padding: 5px 7px;
+}
+
+
+/*------футер------*/
+footer{
+	border-top: 1px solid lightgrey;
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+}
+footer div{
+	display: inline-flex;
+	margin: 2% auto 1% auto;
+}
+footer img{
+	width: 40px;
+	height: 40px;
+}
+
+footer div:last-child *{
+	padding: 0 5px;
+}
+footer a{
+	display: block;
+	border: 1px solid lightgrey;
+	border-radius: 100%;
+	padding: 5px 7px;
+	margin: 0 5px;
+}
+footer a:hover{
+	background-color: lightgrey;
+}
+.gallery:hover{
+	background-image: url(ar.jpg);
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.top{
+	display: block;
+	position: fixed;
+	right: 25px;
+	bottom: 45px;
+	border-radius: 15px;
+	background-color: white;
+}
+.top img{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+
+}
+/*Ширина экрана 850 пикселей и более*/
+@media screen and (min-width: 850px){
+
+.first h1{
+	margin-bottom: 6%;
+	font-size: 40px;
+}
+article img{
+	width: 33%;
+}
+.feat table tr:first-child{
+	border-bottom: 1px solid lightgrey;
+}
+.feat table td:nth-child(1),
+.feat table td:nth-child(2){
+	border-right: 1px solid lightgrey;
+}
+.feat table{
+	height: 70vh;
+}
+.feat table:nth-child(6),
+.feat table:nth-child(7){
+	display: none;
+}
+}
+
+/*Ширина экрана от 600 пикселей до 850 пикселей*/
+/*@media screen and (min-width: 600px) and (max-width: 850px){
+header div:last-child{
+	display: none;
+}
+
+article img{
+	width: 50%;
+}
+.feat table{
+	height: 80vh
+}
+.feat table:nth-child(2),
+.feat table:nth-child(4){
+	display: none;
+}
+.feat table tr:nth-child(1),
+.feat table tr:nth-child(2){
+	border-bottom: 1px solid lightgrey;
+}
+.feat table td:first-child{
+	border-right: 1px solid lightgrey;
+}
+
+}*/
+
+/*Ширина экрана менее 600 пикселей*/
+/*@media screen and (max-width: 600px){
+	header{
+		height: 15vh;
+	}
+header div:last-child{
+	display: none;
+}
+.first{
+	flex-direction: column-reverse;
+	height: 95vh;
+}
+.first img{
+	width: 100%;
+	height: 50%;
+}
+#stories{
+	flex-direction: column;
+	height: 95vh;
+}
+#stories img{
+	height: 50%;
+}
+#stories2{
+	flex-direction: column-reverse;
+	height: 95vh;
+}
+#stories2 img{
+	height: 50%;
+}
+.feat table{
+	height: 80vh
+}
+.feat table:nth-child(2),
+.feat table:nth-child(3){
+	display: none;
+}
+table tr{
+	border-bottom: 1px solid lightgrey;
+}
+.user{
+	flex-direction: column;
+	width: 100%;
+	height: 20vh;
+}
+.user input{
+	width: 80vw;
+}
+.contact{
+	margin-top: 2%;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 10vh;
+}
+
+}*/
+
